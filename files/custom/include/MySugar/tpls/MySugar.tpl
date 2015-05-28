@@ -124,9 +124,11 @@ var mySugarLoader = new YAHOO.util.YUILoader({
 			YAHOO.util.DDM.mode = 1;
 		{/if}
 		{literal}
-		SUGAR.mySugar.renderDashletsDialog();
-		SUGAR.mySugar.sugarCharts.loadSugarCharts(activePage);
-		{/literal}
+                YAHOO.util.Event.onContentReady('dashletsDialog', function(){
+                    SUGAR.mySugar.renderDashletsDialog();
+                    SUGAR.mySugar.sugarCharts.loadSugarCharts(activePage);
+                }); 
+                {/literal}
 		{literal}
 	}
 });

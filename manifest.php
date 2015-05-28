@@ -11,7 +11,7 @@
         'name' => 'SoulwareDashboardHandler',
         'published_date' => '2014-01-01 2014 12:00:00',
         'type' => 'module',
-        'version' => '1.0.0',
+        'version' => '1.0.2',
     );
    
     $installdefs =array(
@@ -33,6 +33,9 @@
 	    "from" => "<basepath>/files/custom/metadata/dashlet_storage_metadata.php", "to" => "custom/metadata/dashlet_storage_metadata.php"),
 	    array(
 	    "from" => "<basepath>/files/custom/Extension/application/Ext/TableDictionary/dashlet_storageTableDictionary.php", "to" => "custom/Extension/application/Ext/TableDictionary/dashlet_storageTableDictionary.php"),
+            array(
+            "from" => "<basepath>/files/modules/Campaigns/Charts.php", "to" => "modules/Campaigns/Charts.php",    
+            )
         ),
         'language'=> array (
             array(
