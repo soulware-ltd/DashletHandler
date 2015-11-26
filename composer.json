@@ -1,10 +1,11 @@
 {
     "name": "soulware/dashlet_handler",
     "description": "SugarCRM install and uninstall script to modify or extend views with custom code.",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "license": "MIT",
     "require": {
-        "php": ">=5.3.0"       
+        "php": ">=5.3.0",
+        "soulware/edit-view-on-install": "dev-master" 
     },
     "minimum-stability":"dev"
 }

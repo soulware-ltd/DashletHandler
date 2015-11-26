@@ -11,7 +11,7 @@
         'name' => 'SoulwareDashboardHandler',
         'published_date' => '2014-01-01 2014 12:00:00',
         'type' => 'module',
-        'version' => '1.0.2',
+        'version' => '1.0.3',
     );
    
     $installdefs =array(
@@ -35,7 +35,13 @@
 	    "from" => "<basepath>/files/custom/Extension/application/Ext/TableDictionary/dashlet_storageTableDictionary.php", "to" => "custom/Extension/application/Ext/TableDictionary/dashlet_storageTableDictionary.php"),
             array(
             "from" => "<basepath>/files/modules/Campaigns/Charts.php", "to" => "modules/Campaigns/Charts.php",    
-            )
+            ),
+            array(
+            "from" => "<basepath>/files/modules/Emails/metadata/additionalDetails.php", "to" => "modules/Emails/metadata/additionalDetails.php",
+            ),
+            array(
+            "from" => "<basepath>/files/custom/modules/Emails/Dashlets/MyEmailsDashlet/MyEmailsDashlet.php", "to" => "custom/modules/Emails/Dashlets/MyEmailsDashlet/MyEmailsDashlet.php",    
+            ),
         ),
         'language'=> array (
             array(
@@ -49,5 +55,8 @@
                 'language'=>'hu_hu'
             ),
         ),
+        'post_uninstall' => array(
+	    '<basepath>/scripts/post_uninstall.php',
+	),
     );
 ?>
